@@ -12,6 +12,9 @@
 <target name="build" depends="compile">
    <jar jarfile="${helloant_jar}" basedir="${dest}"/>
 </target>
+	<target name="test" depends="compile">
+	   <jar jarfile="${helloant_jar}" basedir="${dest}"/>
+	</target>
 <target name="run" depends="build">
 	<java classname="com.tarena.fly.HelloAnt" classpath="${helloant_jar}"/>
 </target>
